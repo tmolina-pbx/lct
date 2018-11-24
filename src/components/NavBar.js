@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./navigation.scss";
+import "../navigation.scss";
 
 export default class Navbar extends Component {
   burgerToggle = function() {
@@ -22,11 +22,17 @@ export default class Navbar extends Component {
           </div>
         </div>
         <div className="navNarrow">
-          <i className="fa fa-bars fa-2x" />
+          <i className="fa fa-bars fa-2x" onClick={this.burgerToggle} /> Menu
           <div className="narrowLinks">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="#" onClick={this.burgerToggle}>
+              Link 1
+            </a>
+            <a href="#" onClick={this.burgerToggle}>
+              Link 2
+            </a>
+            <a href="#" onClick={this.burgerToggle}>
+              Link 3
+            </a>
           </div>
         </div>
       </nav>

@@ -1,14 +1,14 @@
 nav {
-  background-color: #00f;
+  background-color: #eeeded;
   overflow: hidden;
   padding: 1em;
 
   a {
-    color: #fff;
+    color: #000;
   }
 
   a:visited {
-    color: #fff;
+    color: #000;
   }
 
   border-bottom: 1px solid #000;
@@ -36,7 +36,9 @@ nav {
     i {
       float: left;
       cursor: pointer;
-      color: #fff;
+      background: #fff;
+      height: 50px;
+      width: 50px;
     }
 
     .narrowLinks {
